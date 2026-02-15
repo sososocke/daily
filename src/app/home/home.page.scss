@@ -1,27 +1,15 @@
-#container {
-  text-align: center;
-
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 50%;
-  transform: translateY(-50%);
+ion-datetime {
+  border-radius: 16px;
+  box-shadow: rgba(var(--ion-color-rose-rgb), 0.3) 0px 10px 15px -3px;
 }
 
-#container strong {
-  font-size: 20px;
-  line-height: 26px;
+#emotions-list {
+  width: 80%;
 }
 
-#container p {
-  font-size: 16px;
-  line-height: 22px;
-
-  color: #8c8c8c;
-
-  margin: 0;
-}
-
-#container a {
-  text-decoration: none;
+ion-range::part(pin) {
+  color: var(--ion-color-light);
+  transform: scale(1);
+  // transform: scale(1.01);
+  top: -20px;
 }
