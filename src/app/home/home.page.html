@@ -14,9 +14,9 @@
   </ion-header>
 
   <div>
-    <h1>Date</h1>
-    <ion-datetime calss="datetime" presentation="date"></ion-datetime>
-    <h1>How was your day?</h1>
+    <h3>Date: {{ get_selected_date() }}</h3>
+    <!-- <ion-datetime calss="datetime" presentation="date"></ion-datetime> -->
+    <h3>How was your day?</h3>
     <ul id="emotions-list" style="list-style: none;">
       <li>Energy
         <ion-range aria-label="Range with ticks" [ticks]="true" [snaps]="true" [min]="0" [max]="10" [pin]="true"></ion-range>
@@ -28,6 +28,6 @@
         <ion-range aria-label="Range with ticks" [ticks]="true" [snaps]="true" [min]="0" [max]="10" [pin]="true"></ion-range>
       </li>
     </ul>
-    <h1>Any events?</h1>
+    <h3>Any events?</h3>
   </div>
 </ion-content>

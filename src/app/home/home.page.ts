@@ -10,5 +10,12 @@ import { IonRange } from '@ionic/angular/standalone';
   imports: [IonHeader, IonToolbar, IonTitle, IonContent, IonDatetime, IonRange],
 })
 export class HomePage {
-  constructor() {}
+  selected_date: Date;
+  constructor() {
+    this.selected_date = new Date();
+  }
+
+  get_selected_date() {
+    return this.selected_date.toLocaleDateString(`de-DE`);
+  }
 }
